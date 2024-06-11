@@ -1,0 +1,28 @@
+@use 'sass:math';
+@use 'element-plus/theme-chalk/src/common/var.scss';
+
+@function color-mix-level($color, $mix-color, $number) {
+  @return mix($mix-color, $color, math.percentage(math.div($number, 10)))
+}
+
+$primary: #13b768;
+
+:root {
+  --el-color-primary: #{$primary};
+  @for $i from 1 through 9 {
+    --el-color-primary-light-#{$i}: #{color-mix-level($primary, #fff, $i)};
+  }
+  @for $i from 1 through 3 {
+    --el-color-primary-dark-#{$i}: #{color-mix-level($primary, #222, $i)};
+  }
+}
+
+html.dark {
+  --el-color-primary: #{$primary};
+  @for $i from 1 through 9 {
+    --el-color-primary-light-#{$i}: #{color-mix-level($primary, #222, $i)};
+  }
+  @for $i from 1 through 3 {
+    --el-color-primary-dark-#{$i}: #{color-mix-level($primary, #fff, $i)};
+  }
+}
