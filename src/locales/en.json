@@ -3,5 +3,11 @@
     "system": "System",
     "light": "Light",
     "dark": "Dark"
+  },
+  "menu": {
+    "colorMode": "Theme",
+    "instructions": "Instructions",
+    "apiConfig": "API Configuration",
+    "settings": "Settings"
   }
 }

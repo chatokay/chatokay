@@ -3,5 +3,11 @@
     "system": "自动",
     "light": "浅色",
     "dark": "深色"
+  },
+  "menu": {
+    "colorMode": "显示外观",
+    "instructions": "指令",
+    "apiConfig": "API配置",
+    "settings": "设置"
   }
 }
