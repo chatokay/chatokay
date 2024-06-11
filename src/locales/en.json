@@ -1,1 +1,7 @@
-{}
+{
+  "colorMode": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
